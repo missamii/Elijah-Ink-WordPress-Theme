@@ -1,0 +1,480 @@
+/*
+Theme Name:	Kyle's Parallax
+Theme URI: http://tiffanylo.design, http://tiffany-lo.net
+Description: This a theme created for Kyle's business. This theme boasts a parallax, with mobile responsiveness.
+Version: 1.0
+Author: Tiffany Lo
+Author URI: http://tiffanylo.design, http://tiffany-lo.net
+Tags: white, blue, w3.css, framework, left-sidebar, fixed-width, custom-menu, threaded-comments, sticky-post
+*/
+
+
+/* basic reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+  /*background-color: #004060;*/
+  /*color: #ffffff;*/
+  padding: 4px 8px;
+  border-width: 5px;
+  border-bottom-style: dashed;
+}
+
+ul, ol, pre, {}
+
+blockquote, cite, table {
+  margin-bottom: 0.8em;
+}
+
+p {
+  margin-right: 30px;
+  margin-left: 30px
+}
+
+ul, ol, li {
+  margin-left: 0.5em;
+}
+
+
+/* page wrappers */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*background-color: #9E9E9E;*/
+  height: 100%;
+  width: 100%;
+  /*maybe take out?*/
+}
+
+
+/*Building Parallex*/
+
+.para-one, .para-two, .para-three {
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* First image (Logo. Full height) */
+
+.siteimage {
+  background-image: url('/wp-content/themes/parallextwo/guitar.jpg');
+  background-size: cover;
+  min-height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.para-one {
+  padding: 0;
+  margin: 0;
+  background-image: url('guitar.jpg');
+  min-height: 100%;
+  zoom: 1;
+  filter: alpha(opacity=50);
+  /*opacity: 0.5;*/
+}
+
+
+/* site title text */
+
+.site-title {
+  font-size: 600px;
+  position: absolute;
+  top: 40%;
+  left: 22%;
+  /*margin-top: 15px;*/
+  font-size: 50pt;
+  color: #E0EEEE;
+}
+
+
+/* Second image (Portfolio) */
+
+.para-two {
+  float: left;
+  background-image: url("newyork.jpg");
+  min-height: 400px;
+  width: 100%;
+  filter: alpha(opacity=50);
+  /*opacity: 0.5;*/
+}
+
+
+/* center the font title */
+
+.para-two h2 {
+  padding-top: 150px;
+}
+
+
+/* Third image (Contact) */
+
+.para-three {
+  float: left;
+  background-image: url("atl.jpg");
+  min-height: 400px;
+  width: 100%;
+  filter: alpha(opacity=50);
+  /*zoom: 1;
+  filter: alpha(opacity=50);
+  opacity: 0.5;*/
+}
+
+.para-three h2 {
+  padding-top: 150px;
+  /*color: #CFB53B;*/
+}
+
+
+/*.para-three: before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+  }*/
+
+.w3-wide {
+  letter-spacing: 10px;
+}
+
+.w3-hover-opacity {
+  cursor: pointer;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+
+@media only screen and (max-device-width: 1024px) {
+  .para-one, .para-two, .para-three {
+    background-attachment: scroll;
+  }
+}
+
+
+/* common tags */
+
+
+/* links */
+
+a {
+  transition: color .4s;
+  color: #7F7F7F;
+}
+
+a:link, a:visited {
+  color: #265C83;
+}
+
+a:hover {
+  color: #C1CDCD;
+}
+
+a:active {
+  transition: color .3s;
+  color: #007BE6;
+}
+
+.link {
+  text-decoration: none;
+}
+
+
+/* prettier images */
+
+img {
+  border: none;
+}
+
+
+/* blockquote */
+
+blockquote, cite {
+  /*font-size: 0.9em;
+  padding-left: 20px;
+  padding-right: 20px;*/
+}
+
+
+/* main contents */
+
+#main {
+  /*position: absolute;*/
+  text-align: justify;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #F1F1F1;
+  float: left;
+}
+
+#content {
+  width: 100%;
+  position: relative;
+  left: 0px;
+  /*text-align: center;*/
+  padding-top: 50px;
+  min-height: 500px;
+  float: left;
+  display: block;
+}
+
+#content p {
+  padding-left: 240px;
+}
+
+#content a {
+  color: black;
+}
+
+#blog-title-link {
+  font-size: 300%;
+}
+
+#blog-title-link a {
+  color: #D9D9D9;
+  text-decoration: none;
+}
+
+#blog-title-link a:hover, a:active {
+  color: #5C5C5C;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+
+.postmeta {
+  clear: both;
+}
+
+
+/* header */
+
+#header {
+  margin: 30px 0 20px 0;
+  /*border-bottom: 1px solid #eee;*/
+}
+
+
+/* posts */
+
+.postmeta, .postnavigation {
+  font-size: 0.9em;
+}
+
+body.blog .post .postmeta, body.archive .post .postmeta, body.search .post {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+body.blog .post:last-child .postmeta, body.archive .post:last-child .postmeta {
+  border-bottom: none;
+}
+
+
+/* sidebar */
+
+#sidebar {
+  width: 20%;
+  float: left;
+  padding: 20px 5px 20px 5px;
+  margin-bottom: 20px;
+  font-size: 0.9em;
+}
+
+#sidebar ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+#sidebar li {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+#sidebar li li {
+  list-style-type: disc;
+  margin-left: 18px;
+}
+
+#sidebar ul {}
+
+#sidebar li ul ul {
+  margin-left: 0;
+}
+
+#sidebar h2 {
+  padding-bottom: 0.1em;
+  margin: 0;
+}
+
+#sidebar .widget {
+  margin-bottom: 10px;
+}
+
+
+/* footer */
+
+.contact {
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+.contact p {
+  padding-bottom: 30px;
+}
+
+.social-media a {
+  color: #1A1A1A;
+}
+
+#footer {}
+
+#footer p {}
+
+
+/* topnav and footer nav */
+
+
+/* give the nav link color specific */
+
+.w3-navbar a {
+  color: #F5F5F5;
+}
+
+#topnav ul, #footer ul {
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+}
+
+#topnav li, #footer li {
+  list-style-type: none;
+  display: inline;
+  padding-left: 0.5em;
+}
+
+#topnav li ul, #footer li ul {
+  display: inline;
+  padding: 0;
+}
+
+#bottomnav {
+  padding-bottom: 20px;
+}
+
+
+/* comments */
+
+#comments {
+  font-size: 0.9em;
+}
+
+#comments ol {
+  margin: 0;
+}
+
+#comments li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#comments li ul {
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+
+#comments .comment-body {
+  padding: 10px 10px 0 10px;
+}
+
+#comments .comment-meta {
+  font-size: 0.8em;
+  padding-bottom: 0.5em;
+}
+
+#comments .reply {
+  padding-bottom: 10px;
+  font-size: 0.8em;
+}
+
+#comments .thread-even {
+  background: #eee;
+}
+
+#comments .thread-odd {
+  background: #ddd;
+}
+
+#respond {
+  margin-top: 30px;
+  padding: 10px;
+}
+
+#respond label {
+  display: block;
+}
+
+#respond input, #respond textarea {
+  font-family: Helvetica, sans-serif;
+  font-size: 10pt;
+}
+
+
+/* wordpress classes */
+
+.alignleft {
+  float: left;
+  padding: 2px 8px 8px 2px;
+}
+
+.alignright {
+  float: right;
+  padding: 2px 2px 8px 8px;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption-text, .gallery-caption {
+  color: #666;
+  font-size: 0.8em;
+  padding: 3px 0;
+}
+
+.gallery {
+  padding: 10px 10px 25px 10px;
+}
+
+
+/* customize search widget here */
+
+.widget_search #searchform {}
+
+.widget_search #searchform label {
+  display: block;
+}
+
+.widget_search #searchform #s {
+  width: 100px;
+}
+
+.widget_search #searchsubmit {}
