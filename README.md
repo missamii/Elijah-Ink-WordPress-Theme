@@ -11,6 +11,7 @@ My client, Kyle required a theme that showcased not only where his next tour wil
 
 ![code view index file](http://g.recordit.co/miAalYwAM8.gif)
 ![theme view snapshot](http://g.recordit.co/CqVqAiIXrx.gif)
+[![CqVqAiIXrx.th.gif](https://gifyu.com/images/CqVqAiIXrx.th.gif)](https://gifyu.com/image/M2fu)
 
 
 
