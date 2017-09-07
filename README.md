@@ -1,7 +1,8 @@
-# Elijah-Ink-WordPress-Theme
+# ElijahInk WordPress Theme
 WordPress Theme for Kyle Moore
 
-Kyle is an upcoming Guitarist and Songwriter. He currently attends [ATL college name here]. He's end goal is to leverage his talent and skills in music to teach music to grade school level students.
+Kyle is an upcoming Guitarist and Songwriter. He currently attending Georgia State University.
+His current goal is to leverage his talents and skills in music to providing musical education to grade school students. During that time he also plans to realize his end goal in producing.
 
 ## Purpose
 My client, Kyle required a theme that showcased not only where his next tour will be. But something that creatively relected him as a unique artist in the music industry. 
